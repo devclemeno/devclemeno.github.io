@@ -1,1 +1,47 @@
-<router-outlet></router-outlet>
+<mat-toolbar class="app-toolbar mat-elevation-z0">
+  <div fxLayout="row" fxLayoutAlign="space-between center" class="app-toolbar-content">
+
+    <img src="../assets/favicon.png" class="app-logo">
+    <div fxLayout="row" fxLayoutAlign="end center">
+      <button [style.display]="mobileQuery.matches ? 'none' : ''"
+              mat-button class="app-button-white">
+        About Me
+      </button>
+      <button [style.display]="mobileQuery.matches ? 'none' : ''"
+              mat-button class="app-button-glitter">
+        Blog
+      </button>
+      <button [style.display]="!mobileQuery.matches ? 'none' : ''"
+              mat-icon-button
+              (click)="sidenav.toggle()"
+              class="app-button-white">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="app-sidenav-container">
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+  <mat-sidenav [style.display]="!mobileQuery.matches ? 'none' : ''"
+               #sidenav mode="over" position="end"
+               class="app-sidenav">
+    <div fxLayout="column" fxLayoutAlign="start start"
+         class="app-sidenav-inner">
+
+      <button mat-button class="app-button-white" style="width: 100%;">
+        About Me
+      </button>
+      <button mat-button class="app-button-glitter" style="width: 100%;">
+        Blog
+      </button>
+
+    </div>
+  </mat-sidenav>
+
+</mat-sidenav-container>

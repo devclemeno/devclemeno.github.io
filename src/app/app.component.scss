@@ -1,0 +1,37 @@
+@import "../colors.scss";
+
+.app-toolbar,
+.app-toolbar-content {
+  width: 100%;
+  height: 64px;
+  background: $matte-black;
+}
+
+.app-sidenav-container {
+  width: 100%;
+  height: calc(100% - 64px);
+  background: $matte-black;
+}
+
+.app-sidenav {
+  width: 200px;
+  height: 100%;
+}
+
+.app-sidenav-inner {
+  width: 100%;
+  height: 100%;
+  background: #2a2a2a;
+}
+
+.app-logo {
+  width: 36px;
+}
+
+.app-button-white {
+  color: white;
+}
+
+.app-button-glitter {
+  color:#c5a363;
+}
