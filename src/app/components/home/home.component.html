@@ -1,5 +1,35 @@
-<div fxLayout="column" fxLayoutAlign="center center" class="h-container">
+<div fxLayout="column" fxLayoutAlign="center start" class="h-container">
 
-  <img src="../../../assets/work-in-progress.jpg" class="h-image">
+  <span class="code-tag"><i> &lt;h1&gt; </i></span>
+
+  <span class="h-h1">
+    Hi,<br>
+    I'm Francesco Clemeno,<br>
+    {{jobs[currentJobIndex]}}
+  </span>
+
+  <span class="code-tag"><i> &lt;/h1&gt; </i></span>
+
+  <div class="h-separator"></div>
+
+  <span class="code-tag"><i> &lt;p&gt; </i></span>
+
+  <span class="h-p">
+    <em> No One and One Hundred. </em>
+  </span>
+
+  <span class="code-tag"><i> &lt;/p&gt; </i></span>
+
+  <div class="h-separator"></div>
+
+  <span class="code-tag"><i> &lt;button&gt; </i></span>
+
+  <button mat-flat-button
+          (click)="goAboutMe()"
+          class="h-button">
+    About Me
+  </button>
+
+  <span class="code-tag"><i> &lt;/button&gt; </i></span>
 
 </div>

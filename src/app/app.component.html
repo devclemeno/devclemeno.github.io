@@ -5,12 +5,12 @@
     <div fxLayout="row" fxLayoutAlign="end center">
       <button [style.display]="mobileQuery.matches ? 'none' : ''"
               (click)="goAboutMe()"
-              mat-button class="app-button-white">
+              mat-button class="app-button-vanilla">
         About Me
       </button>
       <button [style.display]="mobileQuery.matches ? 'none' : ''"
               (click)="goContactMe()"
-              mat-button class="app-button-white">
+              mat-button class="app-button-vanilla">
         Contact Me
       </button>
       <button [style.display]="mobileQuery.matches ? 'none' : ''"
@@ -21,7 +21,7 @@
       <button [style.display]="!mobileQuery.matches ? 'none' : ''"
               mat-icon-button
               (click)="sidenav.toggle()"
-              class="app-button-white">
+              class="app-button-vanilla">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
@@ -43,12 +43,12 @@
 
       <button mat-button
               (click)="goAboutMe()"
-              class="app-button-white" style="width: 100%;">
+              class="app-button-vanilla" style="width: 100%;">
         About Me
       </button>
       <button mat-button
               (click)="goContactMe()"
-              class="app-button-white" style="width: 100%;">
+              class="app-button-vanilla" style="width: 100%;">
         Contact Me
       </button>
       <button mat-button
