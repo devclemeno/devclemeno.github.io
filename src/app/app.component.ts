@@ -1,6 +1,8 @@
 import { Component, ChangeDetectorRef, OnDestroy, ViewChild, HostListener } from '@angular/core';
 import {MediaMatcher} from '@angular/cdk/layout'
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +16,10 @@ export class AppComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(private changeDetectorRef: ChangeDetectorRef,
+              private media: MediaMatcher,
+              private router: Router,
+              private snackBar: MatSnackBar) {
     // Detect mobile device
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -29,5 +34,22 @@ export class AppComponent implements OnDestroy {
   onResize(): void {
     this.sidenav.close();
   }
+
+  goHome(): void {
+    this.router.navigate(['home']).then();
+  }
+
+  goAboutMe(): void {
+    this.router.navigate(['about-me']).then();
+  }
+
+  goContactMe(): void {
+    this.router.navigate(['contact-me']).then();
+  }
+
+  goBlog(): void {
+    this.snackBar.open('Coming Soon', 'OK', { duration: 1500 });
+  }
+
 
 }

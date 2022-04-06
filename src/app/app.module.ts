@@ -9,13 +9,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutMeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

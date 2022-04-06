@@ -1,13 +1,20 @@
 <mat-toolbar class="app-toolbar mat-elevation-z0">
   <div fxLayout="row" fxLayoutAlign="space-between center" class="app-toolbar-content">
 
-    <img src="../assets/favicon.png" class="app-logo">
+    <img src="../assets/favicon.png"  (click)="goHome()" class="app-logo">
     <div fxLayout="row" fxLayoutAlign="end center">
       <button [style.display]="mobileQuery.matches ? 'none' : ''"
+              (click)="goAboutMe()"
               mat-button class="app-button-white">
         About Me
       </button>
       <button [style.display]="mobileQuery.matches ? 'none' : ''"
+              (click)="goContactMe()"
+              mat-button class="app-button-white">
+        Contact Me
+      </button>
+      <button [style.display]="mobileQuery.matches ? 'none' : ''"
+              (click)="goBlog()"
               mat-button class="app-button-glitter">
         Blog
       </button>
@@ -34,10 +41,19 @@
     <div fxLayout="column" fxLayoutAlign="start start"
          class="app-sidenav-inner">
 
-      <button mat-button class="app-button-white" style="width: 100%;">
+      <button mat-button
+              (click)="goAboutMe()"
+              class="app-button-white" style="width: 100%;">
         About Me
       </button>
-      <button mat-button class="app-button-glitter" style="width: 100%;">
+      <button mat-button
+              (click)="goContactMe()"
+              class="app-button-white" style="width: 100%;">
+        Contact Me
+      </button>
+      <button mat-button
+              (click)="goBlog()"
+              class="app-button-glitter" style="width: 100%;">
         Blog
       </button>
 
