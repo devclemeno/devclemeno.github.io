@@ -1,9 +1,81 @@
+@import "../../../colors.scss";
+@import "../../../writing.scss";
+
 .am-container {
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  padding: 20px;
+  overflow: auto;
 }
 
-.am-image {
-  width: 250px;
+.am-content {
+  width: 55%;
+}
+@media screen and (max-width: 860px) {
+  .am-content {
+    width: 90%;
+  }
+}
+
+.am-separator {
+  height: 10px;
+}
+
+.am-h1 {
+  color: $vanilla;
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.am-p {
+  color: $vanilla;
+  font-size: 16px;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.am-warning {
+  padding: 20px;
+  background: rgba(144, 21, 21, 0.3);
   border-radius: 4px;
+}
+
+.am-warning-icon {
+  color: $vanilla;
+}
+
+.am-warning-span {
+  color: $vanilla;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.am-highlight {
+  background: rgba(144, 21, 21, 0.3);
+  padding: 2px 0;
+  border-radius: 4px;
+}
+
+.am-empathy {
+  color: $glitter;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.am-h2 {
+  color: $glisten;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.am-soft-empathy {
+  color: $glisten;
+}
+
+.am-citation {
+  font-style: italic;
+  color: $glisten;
 }

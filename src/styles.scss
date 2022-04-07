@@ -33,6 +33,7 @@ $porfolio-theme: mat.define-light-theme((
 @include mat.all-component-themes($porfolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @import "./colors.scss";
 
@@ -41,6 +42,7 @@ html, body {
   height: 100%;
 }
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: $matte-black;
 }
