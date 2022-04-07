@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-me',
@@ -7,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goContactMe(): void {
+    this.router.navigate(['contact-me']).then();
+  }
 
 }

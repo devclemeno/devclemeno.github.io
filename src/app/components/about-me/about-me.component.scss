@@ -39,7 +39,7 @@
 .am-warning {
   padding: 20px;
   background: rgba(144, 21, 21, 0.3);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .am-warning-icon {
@@ -78,4 +78,10 @@
 .am-citation {
   font-style: italic;
   color: $glisten;
+}
+
+.am-button {
+  background: $glitter;
+  color: $vanilla;
+  margin-left: 10px;
 }

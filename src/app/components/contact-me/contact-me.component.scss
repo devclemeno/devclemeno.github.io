@@ -1,9 +1,50 @@
+@import "../../../colors.scss";
+@import "../../../writing.scss";
+
 .cm-container {
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  padding: 20px;
+  overflow: auto;
 }
 
-.cm-image {
-  width: 250px;
-  border-radius: 4px;
+/*
+.cm-content {
+  width: 55%;
+}
+@media screen and (max-width: 860px) {
+  .cm-content {
+    width: 90%;
+  }
+}
+*/
+
+.cm-separator {
+  height: 10px;
+}
+
+.cm-h1 {
+  color: $vanilla;
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.cm-button {
+  margin-left: 10px;
+  padding: 10px;
+  background: rgba(144, 21, 21, 0.3);
+  border-radius: 10px 15px;
+  cursor: pointer;
+}
+
+.cm-button-icon {
+  width: 32px;
+}
+
+.cm-button-span {
+  margin-left: 10px;
+  color: $vanilla;
+  font-size: 18px;
 }
