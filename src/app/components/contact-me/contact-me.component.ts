@@ -30,4 +30,8 @@ export class ContactMeComponent {
     this.snackBar.open('Coming Soon', 'OK', { duration: 1500 });
   }
 
+  onTwitterClick(): void {
+    window.open('https://twitter.com/ciccio_clemeno', '_blank');
+  }
+
 }
