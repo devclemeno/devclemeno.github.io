@@ -1,3 +1,5 @@
+<!-- TODO update with responsive grid -->
+
 <div fxLayout="column" fxLayoutAlign="center center" class="cm-container">
 
   <div fxLayout="column" fxLayoutAlign="start start">
@@ -13,10 +15,70 @@
 
     <span class="code-tag"><i> &lt;button&gt; </i></span>
 
-    <div fxLayout="row" fxLayoutAlign="start center" class="cm-button">
+    <div fxLayout="row" fxLayoutAlign="start center"
+         (click)="onLinkedinClick()"
+         class="cm-button">
       <img src="../../../assets/linkedin.png" class="cm-button-icon">
       <span class="cm-button-span">Linkedin</span>
     </div>
+
+    <span class="code-tag"><i> &lt;/button&gt; </i></span>
+
+    <div class="cm-separator"></div>
+
+    <span class="code-tag"><i> &lt;button&gt; </i></span>
+
+    <div fxLayout="row" fxLayoutAlign="start center"
+         (click)="onInstagramClick()"
+         class="cm-button">
+      <img src="../../../assets/instagram.png" class="cm-button-icon">
+      <span class="cm-button-span">Instagram</span>
+    </div>
+
+    <span class="code-tag"><i> &lt;/button&gt; </i></span>
+
+    <div class="cm-separator"></div>
+
+    <span class="code-tag"><i> &lt;button&gt; </i></span>
+
+    <div fxLayout="row" fxLayoutAlign="start center"
+         (click)="onFacebookClick()"
+         class="cm-button">
+      <img src="../../../assets/facebook.png" class="cm-button-icon">
+      <span class="cm-button-span">Facebook</span>
+    </div>
+
+    <span class="cm-comment">* i don't update it</span>
+
+    <span class="code-tag"><i> &lt;/button&gt; </i></span>
+
+    <div class="cm-separator"></div>
+
+    <span class="code-tag"><i> &lt;button&gt; </i></span>
+
+    <div fxLayout="row" fxLayoutAlign="start center"
+         (click)="onYoutubeClick()"
+         class="cm-button">
+      <img src="../../../assets/youtube.png" class="cm-button-icon">
+      <span class="cm-button-span">Youtube</span>
+    </div>
+
+    <span class="cm-comment">* coming soon</span>
+
+    <span class="code-tag"><i> &lt;/button&gt; </i></span>
+
+    <div class="cm-separator"></div>
+
+    <span class="code-tag"><i> &lt;button&gt; </i></span>
+
+    <div fxLayout="row" fxLayoutAlign="start center"
+         (click)="onTwitchClick()"
+         class="cm-button">
+      <img src="../../../assets/twitch.png" class="cm-button-icon">
+      <span class="cm-button-span">Twitch</span>
+    </div>
+
+    <span class="cm-comment">* coming soon</span>
 
     <span class="code-tag"><i> &lt;/button&gt; </i></span>
 
